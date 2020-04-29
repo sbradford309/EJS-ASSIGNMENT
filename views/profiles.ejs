@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title><%= title%></title>
+    </head>
+    <body>
+        <h1>Profiles</h1>
+        <ul>
+            <% people.forEach(function(person) {%>
+            <li>
+                <p>id: <%= person.id %></p>
+                <p>first_name: <%= person.first_name %></p>
+                <p>last_name: <%= person.last_name %></p>
+                <p>email: <%= person.email %></p>
+                <p>gender: <%= person.gender %></p>
+            </li> <% }); %>
+        </ul>
+    </body>
+    
+</html>
